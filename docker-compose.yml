@@ -20,4 +20,4 @@ services:
     depends_on:
       - postgres
     # The container will exit after running the tests
-    command: ["bundle", "exec", "rails", "test"]
+    command: ["bundle", "exec", "rspec"]
