@@ -5,3 +5,4 @@ docker-compose up -d
 bundle install
 docker run -d --name postgres -e POSTGRES_DB=chronlife_test -e POSTGRES_USER=rails -e POSTGRES_PASSWORD=password -p 5432:5432 postgres:15-alpine
 rspec
+COVERAGE=true rspec
